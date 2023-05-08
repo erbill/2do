@@ -30,3 +30,5 @@ You can find the complete Replicache documentation at https://doc.replicache.dev
 ## Get Help
 
 Come say hi on [Discord](https://discord.replicache.dev/)! We're happy to help you get setup and answer questions.
+
+service added
