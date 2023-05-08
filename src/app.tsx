@@ -8,6 +8,7 @@ import { listTodos, TodoUpdate } from "./todo";
 
 import Header from "./components/header";
 import MainSection from "./components/main-section";
+import UrlDisplay from './components/UrlDisplay'; // erbils own component
 
 
 // This is the top-level component for our app.
@@ -44,9 +45,9 @@ const App = ({ rep }: { rep: Replicache<M> }) => {
     }
   };
 
-  // Render app.
-
-  return (
+// Render app.
+return (
+  <>
     <div>
       <Header onNewItem={handleNewItem} />
       <MainSection
@@ -56,7 +57,9 @@ const App = ({ rep }: { rep: Replicache<M> }) => {
         onCompleteTodos={handleCompleteTodos}
       />
     </div>
-  );
+    <UrlDisplay /> {/* myurl */}
+  </>
+);
 };
 
 export default App;

@@ -10,6 +10,33 @@ body {
     font-weight: normal;
     font-style: normal;
 }
+.underthebridge{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 2px 0px 0px 0px;
+    color: rgba(37, 35, 35, 0.4);
+    padding: 12px;
+}
+.information{
+    background-color: rgba(238, 228, 228, 0.242);
+    color: #484848;
+    font-variation-settings: 'wght' 600, 'opsz' 14; /* wght: weight, opsz: optical size */
+    line-height: 1.8em;
+    padding: 10px 10px;
+    border-radius: 12px;
+    margin: 1px 0px;
+    
+    transition: 0.3s;
+}
+.information:hover{
+    background-color: rgba(203, 149, 55, 0.242);
+    color: #181717;
+}
+.information:active {
+    background-color: rgba(60, 119, 24, 0.296);
+    color: #181717;
+}
 
 button {
 	margin: 0;

@@ -6,6 +6,8 @@ import { useReplicache } from "replicache-nextjs/lib/frontend";
 import App from "../../src/app";
 import { mutators } from "../../src/mutators";
 
+import { useState } from "react";
+
 // Next.js runs this server-side.
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const {params} = context;
@@ -31,7 +33,10 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   };
 };
 
-// Runs client-side.
+// ...other imports
+
+
+
 export default function Home({ listID }: { listID: string }) {
   // Load the space "listID"
   const rep = useReplicache(listID, mutators);
