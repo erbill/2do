@@ -6,7 +6,7 @@ function Page() {
   return "";
 }
 
-// This is the entrypoint for the application.
+// This is the entrypoint for the application. 
 //
 // Next.js runs this function server-side (see:
 // https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props).
